@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mario Number gamer</title>
+</head>
+<body>
+
+    <h1 class="myH1"> Super Mario game</h1>
+
+    <audio id="background-music" src="02. Underground Theme.mp3" autoplay loop></audio>
+
+    <div class="game">
+        <header>
+            <div class="game-health">
+                <div class="game-health-number">100%</div>
+                <div class="game-health-bar"></div>
+            </div>
+        </header>
+    
+
+    <div>
+        <h1 class="game-title">
+            Guess a number between 1 & 10
+        </h1>
+        <div class="game-number">?</div>
+        <span class="game-feedback">What's your guess?</span>
+    </div>
+
+    <footer>
+        <input type="number" class="game-guess">
+        <button type="button" class="game-button game-button-play">Play</button>
+        <button type="button" class="game-button game-button-reset">Reset</button>
+
+    </footer>
+    </div>
+
+    <button id="start-button" style="cursor: pointer;">Play Music</button>
+    <button id="mute-button" style="display: none; cursor: pointer;">Mute</button>
+
+    <div class="author"><a href="https://github.com/MichaelT9" target="_blank">by Mihail Trajkovski</a> </div>
+
+    <script src="script.js"></script>
+    <script src="music.js"></script>
+</body>
+</html>

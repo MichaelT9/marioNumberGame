@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Mario";
+    src: url("./MarioFont.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.myH1{
+    min-width: 70%;
+    padding: 15px;
+    background-color: hsl(21, 95%, 42%);
+    text-align: center;
+    border: 5px solid hsl(21, 100%, 75%);
+    border-radius: 5px;
+}
+
+.author{
+    font-size: 10px;
+    color: hsl(224, 100%, 94%);
+    position: absolute;
+    bottom: 10px; /* Adjust the value to your preference */
+    right: 10px;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.author a{
+    text-decoration: none;
+    color: inherit;
+    text-shadow: none;
+}
+
+body{
+    font-family: 'Mario', sans-serif;
+    color: #fff;
+    background: url("/images/background.png");
+    background-size: cover;
+    text-shadow: 2px 2px #090909;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+.game{
+    max-width: 400px;
+    display: grid;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 25px;
+    background: url("images/bg.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.game-health{
+    position: relative;
+    width: 200px;
+    height: 25px;
+    border: 2px solid #fff;
+    margin-left: auto;
+}
+
+.game-health-number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+.game-health-bar{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(120, 100%, 27%);
+}
+
+.game-title{
+    font-size: 24px;
+}
+
+.game-number{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    font-size: 32px;
+    color: #ce4b05;
+    margin: 2px auto;
+    background: url("images/box.png");
+    background-size: cover;
+}
+
+.game-feedback{
+    font-size: 14px;
+}
+
+.game footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+input, button{
+    background: none;
+    font: inherit;
+    color: inherit;
+    border: none;
+}
+
+.game-guess{
+    grid-column: 1/-1;
+    padding: 5px;
+    border: 2px solid #fff;
+}
+
+.game-button{
+    padding: 10px 15px;
+    box-shadow: 5px 5px #090909;
+    cursor: pointer;
+}
+
+.game-button-play{
+    background-color: green;
+}
+
+.game-button-reset{
+    background-color: blue;
+}
+
+.game-button-play:hover{
+    background-color: hsl(120, 100%, 30%);
+}
+
+.game-button-reset:hover{
+    background-color: hsl(240, 100%, 55%);
+}
+
+.game-button-play:active{
+    background-color: hsl(120, 100%, 35%);
+}
+
+.game-button-reset:hover{
+    background-color: hsl(240, 100%, 60%);
+}
+
+#start-button{
+    cursor: pointer;
+    font-size: 12px;
+}
+#mute-button{
+    cursor: pointer;
+    display: none;
+    font-size: 12px;
+}
+
